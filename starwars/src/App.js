@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
-// import { Card as SemanticCard } from 'semantic-ui-react'
 import Card from './components/Card'
 import { Container } from 'semantic-ui-react';
 
@@ -14,7 +13,7 @@ const App = () => {
   // sync up with, if any.
   const [data, setData]= useState([]);
   console.log('App1', data)
-  // console.log('App Folks', data.results)
+  
 
   useEffect(()=>{
     axios.get('https://henry-mock-swapi.herokuapp.com/api')
@@ -30,11 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      
-        
-        {/* {data.map((person, i)=> <Card person={person} key={i}/>)} */}
-        {/* <Card /> */}
-        {/* <div className="card"> */}
+    
         <Container className="container-cards">
         {data.map((person)=> {
           return (
