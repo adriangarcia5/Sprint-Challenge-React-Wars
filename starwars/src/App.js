@@ -19,6 +19,7 @@ const App = () => {
     axios.get('https://henry-mock-swapi.herokuapp.com/api')
     .then(res =>{
         setData(res.data.results)
+        console.log(res.data.results)
     })
     .catch(err => console.log(err)); 
 
@@ -33,8 +34,11 @@ const App = () => {
         {/* {data.map((person, i)=> <Card person={person} key={i}/>)} */}
         {/* <Card /> */}
         <div className="card">
-        {data.map((person, i)=> {
-          return <Card person={person} key={i}/>
+        {data.map((person)=> {
+          return (
+          <Card person={person}/>
+          
+          )
           })}
           </div>
           {/* <Card /> */}
