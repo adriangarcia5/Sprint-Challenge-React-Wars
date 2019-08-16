@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 // import { Card as SemanticCard } from 'semantic-ui-react'
 import Card from './components/Card'
+import { Container } from 'semantic-ui-react';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -33,14 +34,17 @@ const App = () => {
         
         {/* {data.map((person, i)=> <Card person={person} key={i}/>)} */}
         {/* <Card /> */}
-        <div className="card">
+        {/* <div className="card"> */}
+        <Container className="container-cards">
         {data.map((person)=> {
           return (
+            
           <Card person={person}/>
           
           )
           })}
-          </div>
+          </Container>
+          {/* </div> */}
           {/* <Card /> */}
       
     </div>

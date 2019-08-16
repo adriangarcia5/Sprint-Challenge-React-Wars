@@ -10,8 +10,8 @@ function Card(props){
     // console.log(info, 'info')
 
     return  ( 
-        
-    <SemanticCard className="cards">
+
+    <SemanticCard>
         <SemanticCard.Content>
         <SemanticCard.Header> 
             {props.person.name}
@@ -46,7 +46,8 @@ function Card(props){
     //     </div>)
     //     : (<Loader type="Watch" color="#bb1333" height="90" width="60" />)}
         
-    // </SemanticCard>  
+    // </SemanticCard>
+    
     )
 };
 
