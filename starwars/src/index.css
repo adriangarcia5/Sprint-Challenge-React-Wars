@@ -5,3 +5,10 @@ body {
   background-image: url('./sw-bg.jpg');
   background-size: cover;
 }
+
+.card{
+  width: 340px !important;
+  margin: 20px;
+  height: 400px;
+  /* display: grid !important; */
+}
